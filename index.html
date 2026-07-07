@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canivete Suiço Digital</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="app">
+
+    <aside class="sidebar" id="sidebar">
+      <div class="marca">
+        <span class="marca-mark">⌘</span>
+        <div class="marca-text">
+          <strong>Canivete</strong>
+          <small>Digital</small>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+
+        <div class="nav-group">
+          <button class="nav-group__title" data-toggle="calc">
+            <span>Cálculos</span><span class="chev">▾</span>
+          </button>
+          <ul class="nav-group__list" id="calc">
+            <li><button data-tool="calculadora">Calculadora</button></li>
+            <li><button data-tool="imc">IMC</button></li>
+            <li><button data-tool="regra-de-tres">Regra de três</button></li>
+            <li><button data-tool="fracoes">Frações</button></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-group__title" data-toggle="conv">
+            <span>Conversores</span><span class="chev">▾</span>
+          </button>
+          <ul class="nav-group__list" id="conv">
+            <li><button data-tool="convertorGran">Grandezas</button></li>
+            <li><button data-tool="convertorElec">Eletrônicos</button></li>
+            <li><button data-tool="convertorMoedas">Moedas</button></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-group__title" data-toggle="tempo">
+            <span>Tempo</span><span class="chev">▾</span>
+          </button>
+          <ul class="nav-group__list" id="tempo">
+            <li><button data-tool="relogio">Relógio</button></li>
+            <li><button data-tool="cronometro">Cronômetro</button></li>
+            <li><button data-tool="timer">Timer</button></li>
+            <li><button data-tool="calendario">Calendário</button></li>
+            <li><button data-tool="diferenca-datas">Diferença entre datas</button></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-group__title" data-toggle="util">
+            <span>Utilidades</span><span class="chev">▾</span>
+          </button>
+          <ul class="nav-group__list" id="util">
+            <li><button data-tool="gerador-senhas">Gerador de senhas</button></li>
+            <li><button data-tool="hash">Hash</button></li>
+            <li><button data-tool="roleta">Roleta</button></li>
+          </ul>
+        </div>
+
+        <div class="nav-group">
+          <button class="nav-group__title" data-toggle="texto">
+            <span>Texto</span><span class="chev">▾</span>
+          </button>
+          <ul class="nav-group__list" id="texto">
+            <li><button data-tool="bloco-notas">Bloco de notas</button></li>
+            <li><button data-tool="contador-palavras">Contador de palavras</button></li>
+            <li><button data-tool="conversor-texto">Conversor de texto</button></li>
+            <li><button data-tool="remover-espacos">Remover espaços extras</button></li>
+            <li><button data-tool="ordenador-linhas">Ordenador de linhas</button></li>
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="sidebar-footer">
+        <small>v1 · Sujiro - Nícolas Porto Camarinha</small>
+      </div>
+    </aside>
+
+    <div class="overlay" id="overlay"></div>
+
+    <main class="main" id="main">
+      <div class="quando-vazio" id="quandoVazio">
+        <span class="quando-vazio__mark">⌘</span>
+        <h1>Canivete Digital</h1>
+        <p>Escolha uma ferramenta no menu ao lado para começar.</p>
+      </div>
+    </main>
+  </div>
+<script src="js/app.js"></script>
+</body>
+</html>
